@@ -35,10 +35,8 @@ namespace FortuneTellerProject
             //PART TWO:
             //user age is either even or odd
 
-            Console.WriteLine("please re-insert your age");
-            int userNewAge = int.Parse(Console.ReadLine());
-            int retireAge; 
-            if (userNewAge % 2 == 0)
+            int retireAge;
+            if (userAge % 2 == 0)
             {
                 retireAge = 18;
             }
@@ -46,6 +44,93 @@ namespace FortuneTellerProject
             {
                 retireAge = 25;
             }
+
+            //user siblings and vacation home
+            string location;
+            if (userSibling == 0)
+            {
+                location = "Las Vegas";
+            }
+            else if (userSibling == 1)
+            {
+                location = "Los Angeles";
+            }
+            else if (userSibling == 2)
+            {
+                location = "Dubai ";
+            }
+            else if (userSibling == 3)
+            {
+                location = "Miami";
+            }
+            else if (userSibling > 3)
+            {
+                location = "Dubai";
+            }
+            else
+            {
+                location = "North Korea";
+            }
+
+            //Mode of transportation based on favorite color
+
+            string modeOfTransportation = "";
+
+                if (lowerColor == "red" )
+            {
+                modeOfTransportation = "car";
+            }
+                else if (lowerColor == "orange")
+            {
+                modeOfTransportation = "boat";
+            }
+                else if (lowerColor == "yellow")
+            {
+                modeOfTransportation = "plane";
+            }
+                else if (lowerColor == "green")
+            {
+                modeOfTransportation = "segway";
+            }
+                else if (lowerColor == "blue")
+            {
+                modeOfTransportation = "motorcycle";
+            }
+                else if (lowerColor == "indigo")
+            {
+                modeOfTransportation = "bicycle";
+            }
+                else if (lowerColor == "violet")
+            {
+                modeOfTransportation = "skateboard";
+            }
+
+            //How much money in the bank the user has
+
+            string bankAccount;
+            if (birthMonth >= 1 && birthMonth <= 4)
+            {
+                bankAccount = "$5,000";
+            }
+                else if (birthMonth >= 5 && birthMonth <=8)
+            {
+                bankAccount = "$10,000";
+            }
+                else if (birthMonth >= 9 && birthMonth <=19)
+            {
+                bankAccount = "$20,000";
+            }
+                else
+            {
+                bankAccount = "You are broke";
+            }
+
+            //Part 3 -The Users Fortune
+
+            Console.WriteLine(nameFirst + " " + nameLast + " will retire in " + retireAge + " with " + bankAccount +
+                " in the bank, a vaction home in " + location + " and a " + modeOfTransportation);
+                
+                
 
 
         }
