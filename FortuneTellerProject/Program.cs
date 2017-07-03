@@ -28,6 +28,7 @@ namespace FortuneTellerProject
                 Console.WriteLine("the colors are red, oragne, yellow, green, blue, indigo and violet");
                 Console.WriteLine("Out of the choices, please insert your favorite");
                 userColor = Console.ReadLine();
+                lowerColor = userColor.ToLower();
             }
             Console.WriteLine("How many siblings do you have?");
             int userSibling = int.Parse(Console.ReadLine());
@@ -65,7 +66,7 @@ namespace FortuneTellerProject
             }
             else if (userSibling > 3)
             {
-                location = "Dubai";
+                location = "Abu Dhabi";
             }
             else
             {
@@ -78,31 +79,31 @@ namespace FortuneTellerProject
 
                 if (lowerColor == "red" )
             {
-                modeOfTransportation = "car";
+                modeOfTransportation = "audi";
             }
                 else if (lowerColor == "orange")
             {
-                modeOfTransportation = "boat";
+                modeOfTransportation = "BMW";
             }
                 else if (lowerColor == "yellow")
             {
-                modeOfTransportation = "plane";
+                modeOfTransportation = "jaguar";
             }
                 else if (lowerColor == "green")
             {
-                modeOfTransportation = "segway";
+                modeOfTransportation = "private jet";
             }
                 else if (lowerColor == "blue")
             {
-                modeOfTransportation = "motorcycle";
+                modeOfTransportation = "mercedes";
             }
                 else if (lowerColor == "indigo")
             {
-                modeOfTransportation = "bicycle";
+                modeOfTransportation = "maserati";
             }
                 else if (lowerColor == "violet")
             {
-                modeOfTransportation = "skateboard";
+                modeOfTransportation = "range rover";
             }
 
             //How much money in the bank the user has
@@ -127,7 +128,7 @@ namespace FortuneTellerProject
 
             //Part 3 -The Users Fortune
 
-            Console.WriteLine(nameFirst + " " + nameLast + " will retire in " + retireAge + " with " + bankAccount +
+            Console.WriteLine(nameFirst + " " + nameLast + " will retire in " + retireAge + " years with " + bankAccount + 
                 " in the bank, a vaction home in " + location + " and a " + modeOfTransportation);
                 
                 
